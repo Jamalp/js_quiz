@@ -90,10 +90,10 @@ var last = string[string.length-1];
 console.log(last);
 
 backAround = function(options) {
-  var string = "Surf!";
-  var last = string[string.length-1];
+
+  var last = options[options.length-1];
   // last to the front
 
-  new_string = last + string;
+  return last + options.substring(0, options.length-1);
 
 };
